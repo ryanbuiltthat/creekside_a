@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{>head}}
+  <body class="HolyGrail">
+    <header class="HolyGrail-header hide-on-large-only">
+      <div class="Header Header--cozy" role="banner">
+        {{>mobilenav}}
+      </div>
+    </header>
+    <main class="HolyGrail-body">
+      <nav class="HolyGrail-nav u-textCenter white-text light-blue accent-2 hide-on-med-and-down">
+          {{>navigation}}
+      </nav>
+      <aside class="HolyGrail-ads u-textCenter">
+        {{>slider}}
+      </aside>
+      <article class="HolyGrail-content">
+        
+        {{body}}
+      </article>
+    </main>
+    
+    {{>scripts}}
+  </body>
+</html>
