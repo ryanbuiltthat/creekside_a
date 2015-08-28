@@ -2,10 +2,12 @@
   "name": "creeksidegardenscom",
   "version": "0.1.0",
   "dependencies": {
-  	"materialize": "~0.96.1"
+    "materialize": "~0.96.1",
+    "lightgallery": "~1.2.0"
   },
   "private": true,
-  "devDependencies": {
-    
+  "devDependencies": {},
+  "resolutions": {
+    "jquery": ">=2.1.1"
   }
 }

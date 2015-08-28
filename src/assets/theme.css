@@ -1,340 +1,293 @@
-.HolyGrail-nav, .HolyGrail-ads {
-   padding: 0; 
-   border-radius: 0px; 
-   background: inherit; 
+html{
+  color:rgba(38, 50, 56, 0.8);
 }
-.HolyGrail-header{
-	z-index: 9999;
+h2 {
+  font-size: 3.26rem;
+  line-height: 3.616rem;
+  margin: 1.78rem 0 1.424rem 0;
 }
-/*
+#index-banner{
+  background-image:url('https://p.digipen.io/creeksidegardens.com/background1a.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom:3rem;
+}
+.insidePage #index-banner{
+  background-image:none;
+}
+footer.page-footer {
+  margin-top: 0;
+  z-index: 999;
+  position: relative;
+}
+#index-banner h1 {
+  margin-top: 32px;
+  line-height: 4rem;
+  margin: 2.1rem 0 0.0rem 0;
+}
+.table-of-contents a.active{
+  border-left:2px solid #4fc3f7;
+}
+footer address{
+  font-style: normal;
+}
+ul.side-nav.fixed{
+  z-index:99999;
+}
+.flex{
+  display:flex;
+  flex-direction:row;
+  content-align:center;
+  align-items: center;
+  height:80px;
+  padding:0;
+  text-align:left;
+}
+.flex .box-heading{
+  font-size:80%;
+  flex:1;
+  padding-left:0.8rem;
+  padding-top:2rem;
+  padding-bottom:2rem;
+  padding-right:0.8rem;
+}
+
+.flex .box-heading h2{
+  /*color:#fff;*/
+  font-size:2em;
+  margin:auto;
+  font-weight:200;
+  line-height:1;
+}
+.flex .box-heading h2 span{
+  font-weight:400;
+}
+.flex .box-content{
+  padding-left:0rem;
+  padding-right:0.8rem;
+}
+.flex .box-content img{
+  display:block;
+  width:45px;
+  height:auto;
+  margin:0 auto;
+}
+.card .card-image {
+  position: relative;
+  max-height: 12rem;
+  overflow: hidden;
+  display: block;
+}
+.meta .card-content li{
+  width:70%;
+}
+.meta .card-content li span{
+  display:inline-block;
+  float:right;
+}
+
+
+ /*
     When creating your CSS selector,
     change "brown" to something of your choosing
     */
-    .waves-effect.waves-water .waves-ripple {
+    .waves-effect.waves-blue .waves-ripple {
+
      /* The alpha value allows the text and background color
      of the button to still show through. */
-      background-color: rgba(0, 173, 26, 0.65);
+      background-color: rgba(33, 150, 243, 0.65);
     }
-@media only screen and (min-width: 0px){
-	html {
-	  line-height: 1.5;
-	  font-family: "Roboto", sans-serif;
-	  font-weight: normal;
-	  color: rgba(0,0,0,0.87);
-	}
-	html {
-	  font-size: 14px;
-	}
-	a:focus, a:hover{
-		border-bottom: none;
-		  
-	}
-	.HolyGrail-header nav.mobi{
-		-webkit-box-shadow: none;
-		-moz-box-shadow: none;
-		box-shadow: none;
-		line-height:120px;
-	}
-	nav .brand-logo{
-		height: 120px;
-		  display: block;
-		  position: relative;
-	}
-	nav ul li:hover, nav ul li.active{
-		background-color:rgba(5, 173, 206,0.7);
-	}
-	nav {
-		height: inherit;
-	}
-	nav>ul{
-		padding:0;
-	}
-	#nav-mobile{
-		padding: 0;
-		z-index: 2;
-		position: relative;
-		display: block;
-	}
-	#nav-mobile>li{
-		padding-left:1rem;
-		float:none;
-		width:100%;
-	}
-	nav>ul>li{
-		width:100%;
-		text-align:left;
-	}
-
-	.HolyGrail-nav, .HolyGrail-ads{
-	padding:1rem;
-	margin:1rem;
-	}
-	.HolyGrail-body{
-		padding:0;
-	}
-	.HolyGrail-ads{
-		margin:0 1rem 0 0;
-		position:relative;
-		/*background-image: url('https://p.digipen.io/creeksidegardens.com/background1a.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;*/
-	}
-	.HolyGrail-nav{
-		margin:0;
-		position:relative;
-	}
-	.list-events{
-		list-style-type: none;
-		padding:0 0.8em 0 0.8em;
-		margin-bottom:4rem;
-	}
-	.list-events li{
-		font-size:0.9rem;
-		/*text-align:left;*/
-		color:#90a4ae;
-	}
-	.list-events li span{
-		font-size:1.1rem;
-		display:block;
-		font-weight:400;
-	}
-	.list-events li span>b{
-		font-weight:400;
-	}
-	.card-action a{border-bottom:none;}
-	.HolyGrail-content .card-panel.events{
-		position:relative;
-	}
-	.HolyGrail-content .card-panel .panel-image{
-		  position: relative;
-		  z-index: 999;
-		  width: auto;
-		  display: inline-block;
-		  background: #fff;
-		  /*left: 50%;*/
-		  top: 0;
-		  /*transform: translateX(-50%);*/
-		  padding: 0 1rem;
-		  height: 55px;
-	}
-	.HolyGrail-content .card .card-icon{
-		width:75px;
-		position:absolute;
-		top:-25%;
-		left:50%;
-		transform:translateX(-50%);
-		height:75px;
-		background:#fff;
-		padding:1rem;
-	}
-	.HolyGrail-content .card .card-icon img{
-		width:100%;
-		max-width:100%;
-		height:auto;
-	}
-	.HolyGrail-content .card-panel .panel-image{}
-	.HolyGrail-content .card-panel .card-content{
-		border-width: 1px;
-		border-style: solid;
-		padding: 2.5rem 0.5rem;
-		transform: translateY(-2rem);
-		z-index: 998;
-		position: relative;
-	}
-	.HolyGrail-content .card-panel.events .card-content{
-		border-width: 1px;
-		border-style: solid;
-		padding: 3.5rem 0.5rem;
-		margin-top: 2rem;
-		 transform: translateY(0); 
-		z-index: 998;
-		position: relative;
-	}
-	.HolyGrail-content .card-panel.events .card-icon{
-  width: 75px;
-  position: absolute;
-  height: 75px;
-  background: #fff;
-  padding: 1rem;
-  z-index: 999;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0.7rem;
-	}
-	.HolyGrail-content .card-panel.events .card-icon img{
-		width: 100%;
-		max-width: 100%;
-		height: auto;
-	}
-	.HolyGrail-content .card-panel.events .card-content{
-		border-color: #c2185b;
-		margin-top:2rem;
-	}
-	.HolyGrail-content .card.nursery .card-content{
-		  border-color: #4caf50;
-		  z-index: 999;
-		  position: relative;
-		  overflow: visible;
-		  padding-top:40px;
-	}
-	.HolyGrail-content .card.water .card-image{
-		width:50%;
-		float:left;
-	}
-	.HolyGrail-content .card.water .card-content{
-		width:50%;
-		padding-left:4rem;
-	}
-	
-	.HolyGrail-content .card.water .card-icon{
-		top:50%;
-		transform:translateY(-25%) translateX(-50%);
-	}
-	.HolyGrail-content .card.water .card-action a{
-		padding-top: 0.6rem;
-		margin-right:0;
-	}
-
-}
-.hours {
-	display:block;
-	width:100%;
-}
-.hours li{
-	border-bottom:dotted 1px #ff4081;
-}
-.hours li b{
-	font-weight: 300;
-}
-.hours li span{
-	float:right;
-}
-
-@media only screen and (min-width: 601px){
-	.page-title{
-		margin-top:2rem;
-	}
-	.card-panel{
-		margin: 0.5rem 0.5rem 1rem 0.5rem;
-	}
-	.HolyGrail-nav{
-		padding:0;
-		-webkit-box-shadow: 6px 0 13px 0 rgba(0,0,0,0.3);
-		-moz-box-shadow: 6px 0 13px 0 rgba(0,0,0,0.3);
-		box-shadow: 6px 0 13px 0 rgba(0,0,0,0.3);
-		z-index:999;
-	}
-	.HolyGrail-content{
-		-webkit-box-shadow: -4px 0 9px 0 rgba(0,0,0,0.3);
-		-moz-box-shadow: -4px 0 9px 0 rgba(0,0,0,0.3);
-		box-shadow: -4px 0 9px 0 rgba(0,0,0,0.3);
-		z-index:999;
-	}
-	nav{
-		line-height:40px;
-
-	}
-	.nav-border{
-		border: solid 1px rgba(255, 255, 255, 1.0);
-		height: 100%;
-		position: absolute;
-		width: 90%;
-		margin: -6% 5% -5% 5%;
-		flex: 1;
-	}
-	.nav-logo{
-		height: auto;
-		width: 100%;
-		max-width: 100%;
-		position: relative;
-		background: #fff;
-		padding: 2rem 0;
-		margin-bottom:3rem;
-	}
-	.nav-logo img{
-		max-width: 90%;
-		width: 90%;
-		height: auto;
-		display: block;
-		margin: 0 auto;
-	}
-	nav ul a{
-		/*color: #0d47a1;*/
-		color:#fff;
-		border-bottom: none;
-		padding: 0;
-
-	}
-	nav ul li a:hover{
-		/*margin:0 0.75rem;
-		background: #c51162;
-		color: #fff;
-		transition: all 250ms;*/
-	}
-	.HolyGrail-nav .visit{
-		position: relative;
-		display: block;
-		font-size: 80%;
-		position: absolute;
-		bottom: 4rem;
-		left: 0rem;
-		width: 100%;
-		margin: 0 auto;
-
-	}
-	.HolyGrail-nav .visit h5{
-		margin-bottom:0;
-		font-size:1.44rem;
-	}
-	.HolyGrail-nav .visit p{
-		line-height: 1.3rem;
-		margin-bottom:0;
-	}
-	.slides-container h2{
-		  font-size: 2rem;
-		  line-height: 1.2;
-		  font-weight: 300;
-	}
-	.slider-nav .btn-floating{
-		margin:1rem 1rem 0rem 0rem;
-		float:right;
-		clear:right;
-
-	}
-	.hours {
-	display:block;
-	width:75%;
-	}
-}
-
-
-@media only screen and (min-width: 992px){
-	html {
-	  font-size: 14.5px;
-	}
-	.HolyGrail-ads{
-		-webkit-box-flex: 1;
-		-webkit-flex: 1;
-		-ms-flex: 1;
-		flex: 1;
-		padding: 0 2em;
-		margin: 0;
-	}
-	.HolyGrail-nav{
-		.HolyGrail-nav, .HolyGrail-ads {
-		  -webkit-box-flex: 0;
-		  -webkit-flex: 0 0 17rem;
-		  -ms-flex: 0 0 17rem;
-		  flex: 0 0 17rem;
-		}
-	}
-
-
-}
-
-/*@media only screen and (min-width: 1200px){
-	html {
-	  font-size: 15px;
-	}
+/*.insidePage header,.insidePage main,.insidePage footer {
+  padding-left: 240px; 
 }*/
+a{
+  color:#4fc3f7;
+}
+#inside-page-logo{
+  width:100%;
+  max-width:100%;
+  height:auto;
+  display:block;
+  margin-top:;
+}
+footer.page-footer{
+  margin-top:0;
+}
+
+/* experience create inspire caption */
+.caption.brand{
+  word-spacing: 1rem;
+  font-size: 1.1rem;
+}
+
+
+/* sidenav */
+/*.side-nav li {
+  float: none;
+  padding: 0 15px;
+}*/
+.side-nav li:hover, .side-nav li.active {
+  background-color: #e1f5fe;
+}
+ul.side-nav.fixed li:hover, ul.side-nav.fixed li.active {
+  background-color: rgba(33, 150, 243, 0.2);
+}
+ul.side-nav.fixed li.logo{
+  padding:1rem 1rem 3rem 1rem
+}
+
+
+#map-canvas {
+  min-height: 350px;
+  height: 450px;
+  /* width: 100%; */
+  margin: 0px;
+  padding: 0px;
+}
+#map-canvas {
+  /*margin-right: 400px;*/
+}
+#directions-panel {
+  height: 400px;
+  overflow: auto;
+}
+
+
+
+
+/*
+.side-nav.fixed a {
+  display: block;
+  padding: 0 15px;
+  color: #444;
+}
+.side-nav .collapsible li {
+  padding: 0;
+}
+.side-nav .collapsible-body li a {
+  margin: 0 1rem 0 2rem;
+}*/
+/*ul.side-nav.fixed li {
+  line-height: 44px;
+}
+ul.side-nav.fixed li a {
+  font-size: 13px;
+  line-height: 44px;
+  height: 44px;
+}
+ul.side-nav.fixed li.logo{
+  height:auto;
+  line-height:normal;
+  padding: 3rem 1rem;
+}
+ul.side-nav.fixed li.logo a.brand-logo{
+  height:auto;
+  line-height: normal;
+}
+a.button-collapse.top-nav {
+  position: absolute;
+  text-align: center;
+  height: 48px;
+  width: 48px;
+  left: 7.5%;
+  top: 0;
+  float: none;
+  margin-left: 1.5rem;
+  color: #fff;
+  font-size: 32px;
+  z-index: 2;
+}*/
+@media only screen and (max-width: 992px){
+	/*header, main, footer {
+	  padding-left: 0;
+	}*/
+}
+@media only screen and (min-width: 993px){
+  /*.container {
+    width:85%;
+  }*/
+}
+
+
+/*ul.side-nav.fixed li.logo {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #ddd; }
+  ul.side-nav.fixed li.logo:hover {
+    background-color: transparent; }*/
+
+/*ul.side-nav.fixed {
+  overflow: hidden; }
+  ul.side-nav.fixed li {
+    line-height: 44px; }
+    ul.side-nav.fixed li:hover, ul.side-nav.fixed li.active {
+      background-color: rgba(0, 0, 0, 0.05); }
+    ul.side-nav.fixed li a {
+      font-size: 13px;
+      line-height: 44px;
+      height: 44px; }
+  ul.side-nav.fixed ul.collapsible-accordion {
+    background-color: #FFF; }
+  ul.side-nav.fixed:hover {
+    overflow-y: auto; }*/
+
+/*.bold > a {
+  font-weight: bold; }*/
+
+/*#logo-container {
+  height: 57px;
+  margin-bottom: 32px; }*/
+
+/*nav.top-nav {
+  height: 122px;
+  box-shadow: none; }
+  nav.top-nav a.page-title {
+    line-height: 122px;
+    font-size: 48px; }*/
+
+/*a.button-collapse.top-nav {
+  position: absolute;
+  text-align: center;
+  height: 48px;
+  width: 48px;
+  left: 7.5%;
+  top: 0;
+  float: none;
+  margin-left: 1.5rem;
+  color: #fff;
+  font-size: 32px;
+  z-index: 2; }
+  a.button-collapse.top-nav.full {
+    line-height: 122px; }*/
+/*
+@media only screen and (max-width : 600px) {
+  a.button-collapse.top-nav {
+    left: 5%; } }
+
+@media only screen and (max-width : 992px) {
+  nav .nav-wrapper {
+    text-align: center; }
+    nav .nav-wrapper a.page-title {
+      font-size: 36px; } }
+
+@media only screen and (min-width : 993px) {
+  .container {
+    width: 85%; } }
+
+#front-page-logo {
+  display: inline-block;
+  height: 100%;
+  pointer-events: none; }
+
+@media only screen and (max-width: 992px) {
+  #front-page-nav ul.side-nav li {
+    float: none;
+    padding: 0 15px; }
+    #front-page-nav ul.side-nav li:hover {
+      background-color: #ddd; }
+    #front-page-nav ul.side-nav li .active {
+      background-color: transparent; }
+  #front-page-nav ul.side-nav a {
+    color: #444; } }*/

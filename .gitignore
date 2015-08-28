@@ -22,3 +22,4 @@ bower_components
 dist/*
 
 *.sublime-*
+.idea/*

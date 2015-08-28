@@ -1,0 +1,48 @@
+	.photostrip{
+	  overflow: hidden;
+	  width: 100%;
+	  max-width:100%;
+	  line-height: 1;
+	  height: 130px;
+	  padding: 0;
+	  position: relative;
+	  margin: 0;
+	}
+	.photostrip ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		height: 120px;
+		position: absolute;
+		margin-top: 10px;
+		bottom: 0;
+		left: 0;
+	}
+	.photostrip ul>li{
+		width:120px;
+		height:120px;
+		background-repeat:no-repeat;
+		background-size: cover;
+		background-position: center;
+		display:block;
+		padding:0;
+		margin:0;
+		position:absolute;
+		top:0;
+	}
+	
+	.photostrip ul>li a img{
+		width:100%;
+		height:100%;
+		overflow:hidden;
+		display:block;
+		/*opacity:0.7;
+		-webkit-transition: all 250ms ease-in;
+		-moz-transition: all 250ms ease-in;
+		-ms-transition: all 250ms ease-in;
+		-o-transition: all 250ms ease-in;
+		transition: all 250ms ease-in;*/
+	}
+	.photostrip ul>li:hover img{
+		/*opacity:1;*/
+	}

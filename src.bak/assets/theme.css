@@ -1,0 +1,340 @@
+.HolyGrail-nav, .HolyGrail-ads {
+   padding: 0; 
+   border-radius: 0px; 
+   background: inherit; 
+}
+.HolyGrail-header{
+	z-index: 9999;
+}
+/*
+    When creating your CSS selector,
+    change "brown" to something of your choosing
+    */
+    .waves-effect.waves-water .waves-ripple {
+     /* The alpha value allows the text and background color
+     of the button to still show through. */
+      background-color: rgba(0, 173, 26, 0.65);
+    }
+@media only screen and (min-width: 0px){
+	html {
+	  line-height: 1.5;
+	  font-family: "Roboto", sans-serif;
+	  font-weight: normal;
+	  color: rgba(0,0,0,0.87);
+	}
+	html {
+	  font-size: 14px;
+	}
+	a:focus, a:hover{
+		border-bottom: none;
+		  
+	}
+	.HolyGrail-header nav.mobi{
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		line-height:120px;
+	}
+	nav .brand-logo{
+		height: 120px;
+		  display: block;
+		  position: relative;
+	}
+	nav ul li:hover, nav ul li.active{
+		background-color:rgba(5, 173, 206,0.7);
+	}
+	nav {
+		height: inherit;
+	}
+	nav>ul{
+		padding:0;
+	}
+	#nav-mobile{
+		padding: 0;
+		z-index: 2;
+		position: relative;
+		display: block;
+	}
+	#nav-mobile>li{
+		padding-left:1rem;
+		float:none;
+		width:100%;
+	}
+	nav>ul>li{
+		width:100%;
+		text-align:left;
+	}
+
+	.HolyGrail-nav, .HolyGrail-ads{
+	padding:1rem;
+	margin:1rem;
+	}
+	.HolyGrail-body{
+		padding:0;
+	}
+	.HolyGrail-ads{
+		margin:0 1rem 0 0;
+		position:relative;
+		/*background-image: url('https://p.digipen.io/creeksidegardens.com/background1a.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;*/
+	}
+	.HolyGrail-nav{
+		margin:0;
+		position:relative;
+	}
+	.list-events{
+		list-style-type: none;
+		padding:0 0.8em 0 0.8em;
+		margin-bottom:4rem;
+	}
+	.list-events li{
+		font-size:0.9rem;
+		/*text-align:left;*/
+		color:#90a4ae;
+	}
+	.list-events li span{
+		font-size:1.1rem;
+		display:block;
+		font-weight:400;
+	}
+	.list-events li span>b{
+		font-weight:400;
+	}
+	.card-action a{border-bottom:none;}
+	.HolyGrail-content .card-panel.events{
+		position:relative;
+	}
+	.HolyGrail-content .card-panel .panel-image{
+		  position: relative;
+		  z-index: 999;
+		  width: auto;
+		  display: inline-block;
+		  background: #fff;
+		  /*left: 50%;*/
+		  top: 0;
+		  /*transform: translateX(-50%);*/
+		  padding: 0 1rem;
+		  height: 55px;
+	}
+	.HolyGrail-content .card .card-icon{
+		width:75px;
+		position:absolute;
+		top:-25%;
+		left:50%;
+		transform:translateX(-50%);
+		height:75px;
+		background:#fff;
+		padding:1rem;
+	}
+	.HolyGrail-content .card .card-icon img{
+		width:100%;
+		max-width:100%;
+		height:auto;
+	}
+	.HolyGrail-content .card-panel .panel-image{}
+	.HolyGrail-content .card-panel .card-content{
+		border-width: 1px;
+		border-style: solid;
+		padding: 2.5rem 0.5rem;
+		transform: translateY(-2rem);
+		z-index: 998;
+		position: relative;
+	}
+	.HolyGrail-content .card-panel.events .card-content{
+		border-width: 1px;
+		border-style: solid;
+		padding: 3.5rem 0.5rem;
+		margin-top: 2rem;
+		 transform: translateY(0); 
+		z-index: 998;
+		position: relative;
+	}
+	.HolyGrail-content .card-panel.events .card-icon{
+  width: 75px;
+  position: absolute;
+  height: 75px;
+  background: #fff;
+  padding: 1rem;
+  z-index: 999;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0.7rem;
+	}
+	.HolyGrail-content .card-panel.events .card-icon img{
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+	.HolyGrail-content .card-panel.events .card-content{
+		border-color: #c2185b;
+		margin-top:2rem;
+	}
+	.HolyGrail-content .card.nursery .card-content{
+		  border-color: #4caf50;
+		  z-index: 999;
+		  position: relative;
+		  overflow: visible;
+		  padding-top:40px;
+	}
+	.HolyGrail-content .card.water .card-image{
+		width:50%;
+		float:left;
+	}
+	.HolyGrail-content .card.water .card-content{
+		width:50%;
+		padding-left:4rem;
+	}
+	
+	.HolyGrail-content .card.water .card-icon{
+		top:50%;
+		transform:translateY(-25%) translateX(-50%);
+	}
+	.HolyGrail-content .card.water .card-action a{
+		padding-top: 0.6rem;
+		margin-right:0;
+	}
+
+}
+.hours {
+	display:block;
+	width:100%;
+}
+.hours li{
+	border-bottom:dotted 1px #ff4081;
+}
+.hours li b{
+	font-weight: 300;
+}
+.hours li span{
+	float:right;
+}
+
+@media only screen and (min-width: 601px){
+	.page-title{
+		margin-top:2rem;
+	}
+	.card-panel{
+		margin: 0.5rem 0.5rem 1rem 0.5rem;
+	}
+	.HolyGrail-nav{
+		padding:0;
+		-webkit-box-shadow: 6px 0 13px 0 rgba(0,0,0,0.3);
+		-moz-box-shadow: 6px 0 13px 0 rgba(0,0,0,0.3);
+		box-shadow: 6px 0 13px 0 rgba(0,0,0,0.3);
+		z-index:999;
+	}
+	.HolyGrail-content{
+		-webkit-box-shadow: -4px 0 9px 0 rgba(0,0,0,0.3);
+		-moz-box-shadow: -4px 0 9px 0 rgba(0,0,0,0.3);
+		box-shadow: -4px 0 9px 0 rgba(0,0,0,0.3);
+		z-index:999;
+	}
+	nav{
+		line-height:40px;
+
+	}
+	.nav-border{
+		border: solid 1px rgba(255, 255, 255, 1.0);
+		height: 100%;
+		position: absolute;
+		width: 90%;
+		margin: -6% 5% -5% 5%;
+		flex: 1;
+	}
+	.nav-logo{
+		height: auto;
+		width: 100%;
+		max-width: 100%;
+		position: relative;
+		background: #fff;
+		padding: 2rem 0;
+		margin-bottom:3rem;
+	}
+	.nav-logo img{
+		max-width: 90%;
+		width: 90%;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+	}
+	nav ul a{
+		/*color: #0d47a1;*/
+		color:#fff;
+		border-bottom: none;
+		padding: 0;
+
+	}
+	nav ul li a:hover{
+		/*margin:0 0.75rem;
+		background: #c51162;
+		color: #fff;
+		transition: all 250ms;*/
+	}
+	.HolyGrail-nav .visit{
+		position: relative;
+		display: block;
+		font-size: 80%;
+		position: absolute;
+		bottom: 4rem;
+		left: 0rem;
+		width: 100%;
+		margin: 0 auto;
+
+	}
+	.HolyGrail-nav .visit h5{
+		margin-bottom:0;
+		font-size:1.44rem;
+	}
+	.HolyGrail-nav .visit p{
+		line-height: 1.3rem;
+		margin-bottom:0;
+	}
+	.slides-container h2{
+		  font-size: 2rem;
+		  line-height: 1.2;
+		  font-weight: 300;
+	}
+	.slider-nav .btn-floating{
+		margin:1rem 1rem 0rem 0rem;
+		float:right;
+		clear:right;
+
+	}
+	.hours {
+	display:block;
+	width:75%;
+	}
+}
+
+
+@media only screen and (min-width: 992px){
+	html {
+	  font-size: 14.5px;
+	}
+	.HolyGrail-ads{
+		-webkit-box-flex: 1;
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+		padding: 0 2em;
+		margin: 0;
+	}
+	.HolyGrail-nav{
+		.HolyGrail-nav, .HolyGrail-ads {
+		  -webkit-box-flex: 0;
+		  -webkit-flex: 0 0 17rem;
+		  -ms-flex: 0 0 17rem;
+		  flex: 0 0 17rem;
+		}
+	}
+
+
+}
+
+/*@media only screen and (min-width: 1200px){
+	html {
+	  font-size: 15px;
+	}
+}*/

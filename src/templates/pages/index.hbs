@@ -1,41 +1,141 @@
 ---
-title: Welcome To Creekside Gardens
+title: Home
 heading: 'Yo, Assemble!'
-lead: Welcome to my blog!
+dek: Welcome to my blog!
+layout: main.hbs
 ---
-<!-- start card grid -->
-<div class="Grid u-textCenter">
-	<div class="Grid-cell">
-		{{>watercard}}
-	</div>
+<div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center blue-grey-text text-darken-3">Welcome to Creekside Gardens</h1>
+      <div class="row center">
+        <h5 class="header col s12 deep-purple-text text-darken-1">EXPERIENCE | CREATE | INSPIRE</h5>
+      </div>
+      <br><br>
+    </div>
+  </div>
+  <div class="container z-depth-1 white" style="padding-top:3rem;margin-bottom:3rem;transform:translateY(-8%);">
+    <div class="row">
+      <div class="col s12 m3">
+        <a href="#" class="flex btn btn-flat transparent">
+          <div class="box-heading ">
+            <h2 class="blue-text text-lighten-2">Water <span>Gardens</span></h2>
+          </div>
+          <div class="box-content">
+            <img src="{{assets}}/img/blue-block.jpg" />
+          </div>
+        </a>
+      </div>
+      <div class="col s12 m3">
+        <a href="#" class="flex btn btn-flat transparent">
+          <div class="box-heading">
+            <h2 class="green-text"><span>Garden</span> Center</h2>
+          </div>
+          <div class="box-content">
+            <img src="{{assets}}/img/green-block.jpg" />
+          </div>
+        </a>
+    </div>
+      <div class="col s12 m3">
+        <a href="#" class="flex btn btn-flat transparent">
+          <div class="box-heading ">
+            <h2 class="orange-text text-darken-4">Workshops</h2>
+          </div>
+          <div class="box-content">
+            <img src="{{assets}}/img/orange-block.jpg" />
+          </div>
+        </a>
+      </div>
+      <div class="col s12 m3">
+        <a href="#" class="flex btn btn-flat transparent">
+          <div class="box-heading">
+            <h2 class="pink-text text-darken-2">Creekside <span>Events</span></h2>
+          </div>
+          <div class="box-content">
+            <img src="{{assets}}/img/pink-block.jpg" />
+          </div>
+        </a>
+    </div>
+  </div>
+  <div class="row" style="margin-top:5rem;">
+    <div class="col s6 m4">
+      <div class="card">
+        <div class="card-image blue-grey darken-4">
+          <img src="{{assets}}/img/flowers.jpg" style="opacity:0.8;">
+        </div>
+        <div class="card-content">
+          <span class="card-title blue-text text-darken-2">Find Your Flowers</span>
+          <p>We carry an excellent selection of annuals and perennials, many of which are home grown at Creekside Gardens.</p>
+        </div>
+        <div class="card-action">
+          <!-- <a href="#">This is a link</a> -->
+          <a href='#'>Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s6 m4">
+      <div class="card">
+        <div class="card-image blue-grey darken-4">
+          <img src="{{assets}}/img/veggies.jpg" style="opacity:0.8;">
+        </div>
+        <div class="card-content">
+          <span class="card-title pink-text text-darken-2">Organic Veggies are here!</span>
+          <p>Lots to choose from! The garden center is bursting with plants and color! Open till 6 today! Happy Friday friends!</p>
+        </div>
+        <div class="card-action">
+          <!-- <a href="#">This is a link</a> -->
+          <a href='#'>Get Pickin'</a>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <div class="card meta red lighten-1">
+        <div class="card-content white-text">
+          <span class="card-title">Our Hours</span>
+          <ul>
+            <li class="red-text text-lighten-4">mon - sat <span class="white-text">9am - 6pm</span></li>
+            <li class="red-text text-lighten-4">sun <span class="white-text">10am - 5pm</span></li>
+          </ul>
+          <span class="card-title">Call Us</span>
+          <ul>
+            <li class="red-text text-lighten-4">tel: <span class="white-text">570.836.3595</span></li>
+            <li class="red-text text-lighten-4">fax: <span class="white-text">570.836.7723</span></li>
+          </ul>
+        </div>
+        <div class="card-action">
+          <!-- <a href="#">This is a link</a> -->
+          <a href="#" class="red-text text-lighten-5">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+      <div class="section">
+      <div class="row">
+        <div class="col s12">
+          <h3 class="blue-grey-text text-darken-2">Where to Find Us</h3>
+        </div>
+          <div class="col s12 m6">
+            <div id="control">
+              <select id="start" onchange="calcRoute();">
+                <option value="">Click here to Select Your Starting Point</option>
+                <option value="scranton, pa">Scranton</option>
+                <option value="avoca, pa">Avoca</option>
+                <option value="moosic, pa">Moosic</option>
+                <option value="pittston, pa">Pittston</option>
+                <option value="wilkes-barre, pa">Wilkes-Barre</option>
+                <option value="binghamton, ny">Binghamton</option>
+              </select>
+            </div>
+            <div id="map-canvas"></div>
+        </div>
+          <div class="col s12 m6">
+            <p class="caption" style="margin-bottom:0;">To get directions use the dropdown menu above the map to select the nearest city to your starting point. Directions will be displayed below.</p>
+            <div id="directions-panel"></div>
+          </div>
+        </div>
+      </div>
 </div>
-<div class="Grid u-textCenter">
-	<div class="Grid-cell u-1of2">
-{{>cardsample}}
-	</div><!-- left column -->
-	<div class="Grid-cell u-1of2">
-		<div class="Grid">
-			<div class="Grid-cell">
-				{{>nurserycard}}
-			</div>
-		</div><!-- right column -->
-		<div class="Grid">
-			<div class="Grid-cell left-align">
-				{{>hourscard}}
-			</div>
-		</div><!-- right column -->
-</div>
-<!-- <div class="card-panel events white">
-	<div class="panel-image center-align"><img src="{{assets}}/img/pink-block.jpg" width="55" /></div>
-		<div class="card-content">
-			<ul class="list-events">
-				<li><span class="grey-text text-darken-2"><b class="pink-text text-darken-2">june 13</b> lavendar love</span>
-					<p>PLANT an aroma therapy garden using live lavender, and other wonderful herbs<br />MAKE a lavender skin scrub using natural ingredients<br />TASTE lavender sweet treats and drinks made by our wonderful baker, Merissa.</p>
-					<p>Shop our lovely lavender collection of soaps, lotions, dried bundles, wreaths, candles and more!</p>
-					<p>Kids make lavender craft!</p>
-					<p>ALL ages welcome to join us!</p></li>
-					<li><span class="grey-text text-darken-2"><b class="pink-text text-darken-2">may 2 + 3</b> spring fling</span><p>Design a flower arrangement to take home! Kickoff to spring! Perennial giveaway!</p></li>
-			</ul>
-			<a href="#" class="btn btn-flat pink darken-2 white-text waves-effect waves-light">Explore All Upcoming Events</a>
-		</div>
-	</div> -->
+
+
+
+  </div>
